@@ -1,0 +1,335 @@
+{% extends 'include/homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'include/header.html' %}
+
+    <!-- ===============  about style area start=============== -->
+    <div class="about__header section_gap_y_top__1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about_header__content">
+                        <h2>{{ about.title }}</h2>
+                        <p>{{ about.description | safe}}</p>
+
+                        <a href="#" class="btn-rounded-v4">Connect with Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-60">
+                <div class="about_video__wrap">
+                    <div class="video__thumb">
+                        <img src="{{about.image.url}}" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- succes counter wrap -->
+    <div class="success_counter__style bg-body-2 section_gap_y_top__3 section_gap_y_bottom__2">
+        <div class="container">
+            <div class="counter_card__wrap d-flex flex-wrap justify-content-center align-items-center gap-3">
+                <div class="single_counter__box">
+                    <span><img src="{% static 'assets/images/icons/doller-blue.svg' %}" alt=""> Creators earned</span>
+                    <h2>44,740 ETH</h2>
+                </div>
+                <div class="single_counter__box">
+                    <span><img src="{% static 'assets/images/icons/flash-blue.svg' %}" alt=""> Trading volume</span>
+                    <h2>$207M</h2>
+                </div>
+                <div class="single_counter__box">
+                    <span><img src="{% static 'assets/images/icons/flash-blue.svg' %}" alt="">NFT created</span>
+                    <h2>462k</h2>
+                </div>
+                <div class="single_counter__box">
+                    <span><img src="{% static 'assets/images/icons/people-blue.svg' %}" alt="">Total users</span>
+                    <h2>1.5M</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- company mission wrap -->
+    <div class="mission__style section_gap_y_bottom__2 bg-body-2">
+        <div class="container">
+            <div class="row gy-4 align-items-center justify-content-center gx-lg-5">
+                <div class="col-lg-6">
+                    <div class="mission__illustration text-lg-end">
+                        <img src="{% static 'assets/images/about/mission-illustration.png' %}" alt="">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="mission__contents">
+                        <h2 class="mission__title"><span>Our Mission</span> What's MakersPlace?</h2>
+                        <p class="disc-text">Every digital creation is issued as a unique digital edition. Using blockchain technology, a creator can ensure that only a limited number of authentic editions can ever be owned, ensuring scarcity and uniqueness of a digital creation.</p>
+
+                        <a href="#" class="btn-rounded-v5"><span>Learn more</span> <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 6.49988H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 1.49988L11 6.49988L6 11.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- crew style wrap -->
+    <div class="crew_style__start bg-body-2 section_gap_y_top__3">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-lg-5 text-center">
+                    <h2 class="inner-p-title">Our Creative Crew</h2>
+                    <p class="disc-text-2 pt-1">Meet some of the main faces behind the flowbase products!</p>
+                </div>
+            </div>
+
+            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 gy-4 pt-50">
+                <div class="col">
+                    <div class="crew_card_style__one">
+                        <div class="crew__image">
+                            <img src="{% static 'assets/images/crews/crew-one.png' %}" alt="">
+                        </div>
+                        <div class="crew__disc">
+                            <h5 class="crew__title"><a href="#">Archibald</a></h5>
+                            <span>CO-FOUNDER & CEO</span>
+                            <ul class="crew__social">
+                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="crew_card_style__one">
+                        <div class="crew__image">
+                            <img src="{% static 'assets/images/crews/crew-two.png' %}" alt="">
+                        </div>
+                        <div class="crew__disc">
+                            <h5 class="crew__title"><a href="#">Pelican</a></h5>
+                            <span>CO-FOUNDER & CEO</span>
+                            <ul class="crew__social">
+                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="crew_card_style__one">
+                        <div class="crew__image">
+                            <img src="{% static 'assets/images/crews/crew-three.png' %}" alt="">
+                        </div>
+                        <div class="crew__disc">
+                            <h5 class="crew__title"><a href="#">Bogrol</a></h5>
+                            <span>COORDINATOR</span>
+                            <ul class="crew__social">
+                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="crew_card_style__one">
+                        <div class="crew__image">
+                            <img src="{% static 'assets/images/crews/crew-four.png' %}" alt="">
+                        </div>
+                        <div class="crew__disc">
+                            <h5 class="crew__title"><a href="#">Danny Vee</a></h5>
+                            <span>EXECUTIVE EDITOR</span>
+                            <ul class="crew__social">
+                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="crew_card_style__one">
+                        <div class="crew__image">
+                            <img src="{% static 'assets/images/crews/crew-five.png' %}" alt="">
+                        </div>
+                        <div class="crew__disc">
+                            <h5 class="crew__title"><a href="#">Archibald</a></h5>
+                            <span>CO-FOUNDER & CEO</span>
+                            <ul class="crew__social">
+                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="crew_card_style__one">
+                        <div class="crew__image">
+                            <img src="{% static 'assets/images/crews/crew-six.png' %}" alt="">
+                        </div>
+                        <div class="crew__disc">
+                            <h5 class="crew__title"><a href="#">Nass diba</a></h5>
+                            <span>VP Product</span>
+                            <ul class="crew__social">
+                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="crew_card_style__one">
+                        <div class="crew__image">
+                            <img src="{% static 'assets/images/crews/crew-seven.png' %}" alt="">
+                        </div>
+                        <div class="crew__disc">
+                            <h5 class="crew__title"><a href="#">Dylan Meringue</a></h5>
+                            <span>Designer</span>
+                            <ul class="crew__social">
+                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="crew_card_style__one">
+                        <div class="crew__image">
+                            <img src="{% static 'assets/images/crews/crew-eight.png' %}" alt="">
+                        </div>
+                        <div class="crew__disc">
+                            <h5 class="crew__title"><a href="#">Jim Séchen</a></h5>
+                            <span>Developers</span>
+                            <ul class="crew__social">
+                                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="join_crew__card">
+                        <button class="join__btn">Join us!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!-- client wrap -->
+    <div class="client_logo_style__two bg-body-2 section_gap_y_top__1 ">
+        <div class="container">
+            <h4 class="section__title text-center">Awesome <span>people</span> we worked with</h4>
+            <div class="row gy-4 row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-2">
+                <div class="col">
+                    <div class="single_client__logo">
+                        <img src="{% static 'assets/images/client/client-logo-one.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="single_client__logo">
+                        <img src="{% static 'assets/images/client/client-logo-two.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="single_client__logo">
+                        <img src="{% static 'assets/images/client/client-logo-three.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="single_client__logo">
+                        <img src="{% static 'assets/images/client/client-logo-four.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="single_client__logo">
+                        <img src="{% static 'assets/images/client/client-logo-five.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="single_client__logo">
+                        <img src="{% static 'assets/images/client/client-logo-six.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="single_client__logo">
+                        <img src="{% static 'assets/images/client/client-logo-seven.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="single_client__logo">
+                        <img src="{% static 'assets/images/client/client-logo-two.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- support style start -->
+     <div class="support__style bg-body-2 section_gap_y_top__3 section_gap_y_bottom__1">
+         <div class="container">
+             <div class="row justify-content-center">
+                 <div class="col-lg-6 text-center">
+                     <h4 class="support__title">Still, have questions? <br>
+                        We’re here to help.</h4>
+                    
+                 </div>
+             </div>
+
+             <div class="row gy-4 pt-50">
+                 <div class="col-lg-4 col-md-6">
+                    <div class="support_card__style">
+                        <div class="support__icon">
+                           <img src="{% static 'assets/images/icons/helpman-3d.png' %}" alt="">
+                        </div>
+                        <div class="support__disc">
+                            <h5>Help Room</h5>
+                            <p>Search in our support center
+                               with your query.</p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6">
+                    <div class="support_card__style">
+                        <div class="support__icon">
+                           <img src="{% static 'assets/images/icons/chat-3d.png' %}" alt="">
+                        </div>
+                        <div class="support__disc">
+                            <h5>Help Room</h5>
+                            <p>Search in our support center
+                               with your query.</p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6">
+                    <div class="support_card__style">
+                        <div class="support__icon">
+                           <img src="{% static 'assets/images/icons/mail-3d.png' %}" alt="">
+                        </div>
+                        <div class="support__disc">
+                            <h5>Help Room</h5>
+                            <p>Search in our support center
+                               with your query.</p>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+    <!-- ===============  about style area start=============== -->
+  
+    {% include 'include/footer.html' %}
+    {% endblock %}

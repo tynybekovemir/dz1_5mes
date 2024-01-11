@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <title>NFTOcean - NFT Marketplace Website Template + Light & Dark</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/gif" sizes="20x20">
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="assets/css/dropzone.min.css">
+    <!-- bootstarp icon -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <!-- animate Css -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Swiper bundle Css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body class="theme-light-active">
+
+     <!-- mobil__searchbar style -->
+     <div class="mobil__searchbar" id="mobilSearch">
+        <div class="input__wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="pb-3 d-flex align-items-center justify-content-between"><h5>What are you looking for?</h5> <span class="close__search" id="closeSearch">Close Popup</span></div>
+                        <form action="#">
+                            <div class="d-flex">
+                                <input type="text" placeholder="Search Item, Creators, Collections etc.">
+                                <button class="submit-v1 ml-2">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===============  header area start =============== -->
+    <header>
+        <div class="header-area header-defult header_style__two bg-body">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-2 col-lg-3 col-md-2 col-2 align-items-center d-flex order-0">
+                        <div class="nav-logo logo-switch d-flex justify-content-between align-items-center">
+                            <a class="logo-dark" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                            <a class="logo-light" href="index.html"><img src="assets/images/logo-v2.png" alt="logo"></a>
+                        </div>
+                        <div class="nav-search-style-two w-100 d-xl-block d-none">
+                            <span class="search__icon">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.26847 16.0378C12.2827 16.0378 15.5369 12.7834 15.5369 8.7689C15.5369 4.7544 12.2827 1.5 8.26847 1.5C4.2542 1.5 1 4.7544 1 8.7689C1 12.7834 4.2542 16.0378 8.26847 16.0378Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.0002 17.5L13.4023 13.9025" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                 </svg>
+                            </span>
+                            <input type="text" placeholder="Collection, item or user">
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-10 col-lg-9 d-flex justify-content-end">
+                        <nav class="main-nav mr-2">
+                            <div class="inner-logo d-xl-none text-center pt-4">
+                                <a href="#" class="for-dark"><img src="assets/images/logo.png" alt=""></a>
+                                <a href="#" class="for-light"><img src="assets/images/logo-v2.png" alt=""></a>
+                            </div>
+                            <ul>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Home</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home Style - 01</a></li>
+                                        <li><a href="index-2.html">Home Style - 02</a></li>
+                                        <li><a href="index-3.html">Home Style - 03</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Explore</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="marketplace-1.html">Marketplace - 1</a></li>
+                                        <li><a href="marketplace-2.html">Marketplace - 2</a></li>
+                                        <li><a href="auction.html">Live Auction</a></li>
+                                        <li><a href="collection.html">Collection</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Pages</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="auction.html">Live Auction</a></li>
+                                        <li><a href="collection.html">Collection</a></li>
+                                        <li><a href="activity.html">Activity</a></li>
+                                        <li><a href="connect-wallet.html">Connect Wallet</a></li>
+                                        <li><a href="nft-details.html">NFT Details</a></li>
+                                        <li><a href="author-profile.html">Author Profile</a></li>
+                                        <li><a href="login.html">Login</a></li>
+                                        <li><a href="register.html">Register</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Create</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="create.html">Create NFT</a></li>
+                                        <li><a href="create-multiple.html">Create NFT (Maltiple)</a></li>
+                                        <li><a href="create-single.html">Create NFT (Single)</a></li>
+                                        <li><a href="creators.html">Creators</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Blog</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog.html">Blog Grid</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+
+                            </ul>
+
+                            <div class="d-xl-none d-inline-flex flex-column gap-3 px-3 mt-4">
+                                <a href="connect-wallet.html" class="btn-pill-v1"><span>Connect Wallet</span></a>
+                            </div>
+                        </nav>
+
+                        <div class="nav-actions d-flex align-items-center">
+                           
+                            <div class="d-none d-md-block mr-2">
+                                <a href="connect-wallet.html" class="btn-pill-v1"><span>Connect Wallet</span></a>
+                            </div>
+                            <button type="button" class="nav_search__icon mr-2 d-block d-xl-none mr-2 style__two" id="navSearch">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.26847 16.0378C12.2827 16.0378 15.5369 12.7834 15.5369 8.7689C15.5369 4.7544 12.2827 1.5 8.26847 1.5C4.2542 1.5 1 4.7544 1 8.7689C1 12.7834 4.2542 16.0378 8.26847 16.0378Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M17.0002 17.5L13.4023 13.9025" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </button>
+                            <label class="theme-switch-one style__two">
+                                <input type="checkbox" id="slider" class="slider-light check-status">
+                                <span class="slider round"></span>
+                            </label>
+                           
+                            <div class="d-flex align-items-center gap-4 ml-2">
+                                <div class="mobile-menu d-flex ">
+                                    <a href="javascript:void(0)" class="hamburger d-block d-xl-none">
+                                        <span class="h-top"></span>
+                                        <span class="h-middle"></span>
+                                        <span class="h-bottom"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===============  header area end =============== -->
+
+    <!-- ===============  breadcrumb style start =============== -->
+    <div class="breadcrumb_style__two bg-body-2">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <a href="index.html" class="back__btn">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 6.5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6 11.5L1 6.5L6 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span>Back to home</span>
+                </a>
+
+                <ul class="d-flex page__list">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Product Details</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  breadcrumb style end =============== -->
+
+    <div class="nft_details__style pt-60 bg-body-2 section_gap_y_bottom__1">
+        <div class="container">
+            <div class="row gx-7 gy-4 position-relative justify-content-between">
+                <div class="col-lg-7 col-sm-10 col-12">
+                    <div class="nft_details__img">
+                        <img src="assets/images/nft/nft-d-img.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="nft__details">
+                        <div class="nd__header">
+                            <div class="nd__title">
+                                <span>Pizza Game Chef</span>
+                                <h3 class="nft__title">Running Puppets <span>Collectibles</span></h3>
+                            </div>
+                            <ul class="nd_header__actions">
+                                <li class="like__btn">
+                                    <button><svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.6985 1.99765L6.99742 2.1692L7.2962 1.99743C7.50862 1.8753 7.71506 1.74828 7.92068 1.62176C8.31313 1.38029 8.70258 1.14066 9.12479 0.940522C9.75536 0.641607 10.2727 0.531212 10.6931 0.653546C13.0724 1.35159 13.8419 3.69978 13.1616 5.63257L13.1605 5.63569C12.6276 7.17674 11.1864 8.58658 9.76123 9.65606C8.42346 10.66 7.1915 11.297 6.99824 11.3948C6.80116 11.2956 5.58162 10.6685 4.25227 9.67217C2.83358 8.60886 1.38872 7.19725 0.835968 5.63284C0.154704 3.69814 0.922572 1.34971 3.29816 0.653425L3.29875 0.653253C3.73433 0.525103 4.24488 0.633423 4.86272 0.928388C5.27058 1.1231 5.64246 1.35367 6.02504 1.59088C6.24316 1.72612 6.46476 1.86351 6.6985 1.99765Z"
+                                                stroke="currentColor" stroke-width="1.2" />
+                                        </svg> <span>52</span></button>
+                                </li>
+                                <li>
+                                    <button><svg width="14" height="4" viewBox="0 0 14 4" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7 2.25C7.34518 2.25 7.625 1.97018 7.625 1.625C7.625 1.27982 7.34518 1 7 1C6.65482 1 6.375 1.27982 6.375 1.625C6.375 1.97018 6.65482 2.25 7 2.25Z"
+                                                fill="currentColor" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M12.375 2.25C12.7202 2.25 13 1.97018 13 1.625C13 1.27982 12.7202 1 12.375 1C12.0298 1 11.75 1.27982 11.75 1.625C11.75 1.97018 12.0298 2.25 12.375 2.25Z"
+                                                fill="currentColor" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M1.625 2.25C1.97018 2.25 2.25 1.97018 2.25 1.625C2.25 1.27982 1.97018 1 1.625 1C1.27982 1 1 1.27982 1 1.625C1 1.97018 1.27982 2.25 1.625 2.25Z"
+                                                fill="currentColor" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="collections">
+                            <li class="creator">
+                                <div class="thumb">
+                                    <img src="assets/images/nft/avater-sm-one.png" alt="">
+                                </div>
+                                <div class="disc">
+                                    <span>Creator</span>
+                                    <h5>Geometrical Figure</h5>
+                                </div>
+                            </li>
+                            <li class="creator">
+                                <div class="thumb">
+                                    <img src="assets/images/nft/avater-sm-four.png" alt="">
+                                </div>
+                                <div class="disc">
+                                    <span>Collection</span>
+                                    <h5>Running Puppets</h5>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="nd_disc__text">
+                            <p>The image and metadata above are from its official website or on-chain data, cached by
+                                Running Puppets. It’s our best effort, and we don’t take any responsibility for any
+                                incorrectness.</p>
+                        </div>
+                        <div class="nd__status">
+
+                            <div class="nft__price">
+                                <span>Current Bid</span>
+                                <div class="d-flex align-items-center">
+                                    <span class="eth__icon">
+                                        <img src="assets/images/icons/tri-flash-blue.svg" alt="">
+                                    </span>
+                                    <h4>2.40ETH <span>/ $4769.88</span></h4>
+                                </div>
+                            </div>
+
+                            <div class="nft__countdown text-end">
+                                <span>Auction ends in</span> <br>
+                                <div class="count__down countdown" data-date="2022-11-09">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="bid__btn pt-20">
+                            <a href="#" class="btn-rounded-v6">Place a Bid</a>
+                        </div>
+
+                        <div class="accordion-item nd_single__block author__details mt-40">
+                            <h2 class="accordion-header sidebar__header" id="blockHeadingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#block-collapseOne" aria-expanded="true">
+                                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.16992 1H16.0032" stroke="currentColor" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.16992 6H16.0032" stroke="currentColor" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.16992 11H16.0032" stroke="currentColor" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1 1H1.01111" stroke="currentColor" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1 6H1.01111" stroke="currentColor" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1 11H1.01111" stroke="currentColor" stroke-width="1.2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                    <span>Status</span>
+                                </button>
+                            </h2>
+                            <div id="block-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="blockHeadingOne">
+                                <div class="accordion-body sidebar__body">
+                                    <h5 class="author_dtitle">Owner</h5>
+                                    <div class="author">
+                                        <div class="avater">
+                                            <img src="assets/images/nft/d-author.png" alt="" class="author__img">
+                                            <img src="assets/images/icons/tick-blue.svg" alt="" class="tick">
+                                        </div>
+                                        <h6>Eric Widget</h6>
+                                    </div>
+
+
+                                    <h5 class="author_dtitle mt-20">Properties</h5>
+                                    <div class="row gx-2 gy-2">
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="properties__info">
+                                                <span>Mouth</span>
+                                                <h5>Ambivalent</h5>
+                                                <p>27.3% rarity</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="properties__info">
+                                                <span>Background</span>
+                                                <h5>Sweatband</h5>
+                                                <p>7.4% rarity</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="properties__info">
+                                                <span>Eye</span>
+                                                <h5>Moody</h5>
+                                                <p>27.7% rarity</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="properties__info">
+                                                <span>Facial Hair</span>
+                                                <h5>Brown Beard</h5>
+                                                <p>0.9% rarity</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="properties__info">
+                                                <span>Head</span>
+                                                <h5>Regular</h5>
+                                                <p>90.3% rarity</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-6">
+                                            <div class="properties__info">
+                                                <span>Hair & Hats</span>
+                                                <h5>Casual Purple</h5>
+                                                <p>1.6% rarity</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item nd_single__block author__details mt-40">
+                            <h2 class="accordion-header sidebar__header" id="blockHeadingTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#block-collapseTwo" aria-expanded="true">
+                                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.0061 13.9946L12.0195 10.0081" stroke="currentColor"
+                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M12.0181 10.0081L9.16707 12.8591C8.53888 13.4873 7.51606 13.4873 6.88787 12.8591L3.47309 9.4443C2.84491 8.81611 2.84491 7.7933 3.47309 7.16511L9.16707 1.47114C9.79526 0.842953 10.8181 0.842953 11.4463 1.47114L14.861 4.88593C15.4892 5.51412 15.4892 6.53693 14.861 7.16511L12.0181 10.0081Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1.5 16H6.33222" stroke="currentColor" stroke-width="1.5"
+                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M5.17383 5.46582L10.8678 11.1598" stroke="currentColor"
+                                            stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+
+
+                                    <span>Bids</span>
+                                </button>
+                            </h2>
+                            <div id="block-collapseTwo" class="accordion-collapse collapse show"
+                                aria-labelledby="blockHeadingTwo">
+                                <div class="accordion-body sidebar__body">
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="assets/images/nft/nd-a-one.png" alt="" class="bidder__img">
+                                            <img src="assets/images/icons/tick-blue-m.svg" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.83 ETH</span></h5>
+                                            <p>by <span>Tsuki Genesis</span> 1 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="assets/images/nft/nd-a-two.png" alt="" class="bidder__img">
+                                            <img src="assets/images/icons/tick-blue-m.svg" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.23 ETH</span></h5>
+                                            <p>by <span>Jahid Hassan</span> 10 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="assets/images/nft/nd-a-three.png" alt="" class="bidder__img">
+                                            <img src="assets/images/icons/tick-blue-m.svg" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.78 ETH</span></h5>
+                                            <p>by <span> Norman Gordon</span> 1 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="assets/images/nft/nd-a-four.png" alt="" class="bidder__img">
+                                            <img src="assets/images/icons/tick-blue-m.svg" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.12 ETH</span></h5>
+                                            <p>by <span>Tsuki Genesis</span> 2 days ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item nd_single__block author__details mt-40">
+                            <h2 class="accordion-header sidebar__header" id="blockHeadingThree">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#block-collapseThree" aria-expanded="true">
+                                    <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.0568 7.68481L17.2315 11.2047C16.5242 14.2445 15.1264 15.474 12.4991 15.2213C12.0781 15.1877 11.6233 15.1119 11.1349 14.994L9.72027 14.6571C6.20883 13.8235 5.12256 12.0888 5.94779 8.56898L6.77302 5.04071C6.94144 4.32495 7.14353 3.70182 7.39615 3.18816C8.38137 1.15035 10.0571 0.603 12.8696 1.26824L14.2759 1.59664C17.8041 2.42187 18.882 4.16496 18.0568 7.68481Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M12.4995 15.2213C11.9774 15.575 11.3206 15.8697 10.5206 16.1307L9.19013 16.5686C5.84712 17.6465 4.08719 16.7454 3.00092 13.4024L1.92307 10.0762C0.84522 6.73323 1.73781 4.96488 5.08083 3.88703L6.4113 3.44915C6.75655 3.33968 7.08496 3.24706 7.39652 3.18811C7.1439 3.70177 6.94181 4.32491 6.77339 5.04066L5.94816 8.56894C5.12294 12.0888 6.20921 13.8235 9.72064 14.6571L11.1353 14.9939C11.6237 15.1118 12.0784 15.1876 12.4995 15.2213Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M10.4609 6.07654L14.545 7.11228" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M9.63672 9.33533L12.0787 9.95846" stroke="currentColor"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+
+
+                                    <span>History</span>
+                                </button>
+                            </h2>
+                            <div id="block-collapseThree" class="accordion-collapse collapse show"
+                                aria-labelledby="blockHeadingThree">
+                                <div class="accordion-body sidebar__body">
+
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="assets/images/nft/nd-a-three.png" alt="" class="bidder__img">
+                                            <img src="assets/images/icons/tick-blue-m.svg" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.78 ETH</span></h5>
+                                            <p>by <span> Norman Gordon</span> 1 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="assets/images/nft/nd-a-four.png" alt="" class="bidder__img">
+                                            <img src="assets/images/icons/tick-blue-m.svg" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.12 ETH</span></h5>
+                                            <p>by <span>Tsuki Genesis</span> 2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="assets/images/nft/nd-a-one.png" alt="" class="bidder__img">
+                                            <img src="assets/images/icons/tick-blue-m.svg" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.83 ETH</span></h5>
+                                            <p>by <span>Tsuki Genesis</span> 1 hours ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="bidder__history">
+                                        <div class="avater">
+                                            <img src="assets/images/nft/nd-a-two.png" alt="" class="bidder__img">
+                                            <img src="assets/images/icons/tick-blue-m.svg" alt="" class="tick">
+                                        </div>
+                                        <div class="bidder__disc">
+                                            <h5>Bid <span>0.23 ETH</span></h5>
+                                            <p>by <span>Jahid Hassan</span> 10 hours ago</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ===============  footer style start =============== -->
+    <div class="footer_style__one bg-body section_gap_y_top__2">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="index.html" class="for-dark"><img src="assets/images/logo.png" alt=""></a>
+                            <a href="index.html" class="for-light"><img src="assets/images/logo-v2.png" alt=""></a>
+                        </div>
+                        <p>NFTOcean is a shared liquidity NFT market smart contract</p>
+
+
+                        <h5>Language</h5>
+                        <div class="languege__dropdown">
+                            <button>
+                               <img src="assets/images/icons/flag-us.png" alt=""> English
+                            </button>
+                            <ul class="languege__list">
+                              <li><a href="#"> <img src="assets/images/icons/flag-us.png" alt=""> English</a></li>
+                              <li><a href="#"> <img src="assets/images/icons/flag-us.png" alt=""> English</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 d-flex justify-content-lg-center">
+                    <div class="footer__widget">
+                        <h6 class="footer_widget__title">Market plac</h6>
+
+                        <ul class="footer_widget__links">
+                            <li><a href="author-profile.html">Profile</a></li>
+                            <li><a href="marketplace-1.html">Marketplace</a></li>
+                            <li><a href="creators.html">Creators</a></li>
+                            <li><a href="activity.html">Activity</a></li>
+                            <li><a href="collection.html">Colletctions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 d-flex justify-content-lg-center ">
+                    <div class="footer__widget">
+                        <h6 class="footer_widget__title">Company</h6>
+
+                        <ul class="footer_widget__links">
+                            <li><a href="create-multiple.html">Upload</a></li>
+                            <li><a href="connect-wallet.html">Connect wallet</a></li>
+                            <li><a href="blog.html">Our blog </a></li>
+                            <li><a href="nft-details.html">Item details</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer__widget newslatter__widget">
+                        <h6 class="footer_widget__title">Join Newsletter</h6>
+                        <form action="#" method="POST" id="footer_form__one">
+                            <div class="footer_newslatter__one style__two mt-2">
+                                <input type="text" placeholder="Your Email">
+                                <button type="submit"
+                                    class="form__submit submit-btn-one btn-rounded-v1">Subscribe</button>
+                            </div>
+                        </form>
+
+                        <ul class="footer_social__links style__two d-flex">
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#"><i class="bi bi-github"></i></a></li>
+                            <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer__copyright has-border-top">
+                <div class="col-lg-12">
+                    <p class="text-center">Copyright©2022. Created with love by <a href="#">wprealizer</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  footer style end =============== -->
+
+    <!--Custom jsvascript and Plugins -->
+
+    <!-- jquery latest -->
+    <script src="assets/js/jquery-3.6.0.min.js" ></script>
+    <!-- latest bootstarp bundle -->
+    <script src="assets/js/bootstrap.bundle.min.js" ></script>
+    <!-- swiper bundle -->
+    <script src="assets/js/swiper-bundle.min.js" ></script>
+    <!-- wow js -->
+    <script src="assets/js/wow.min.js" ></script>
+    <!-- nice select -->
+    <script src="assets/js/jquery.nice-select.min.js" ></script>
+    <!-- jquery countdown -->
+    <script src="assets/js/jquery.countdown.js"  ></script>
+    <!-- dropzone js -->
+    <script src="assets/js/dropzone.min.js" ></script>
+    <!-- fancybox -->
+    <script src="assets/js/jquery.fancybox.min.js" ></script>
+    <!-- Custom JavaScript -->
+    <script async src="assets/js/main.js"></script>
+</body>
+
+</html>

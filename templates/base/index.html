@@ -1,0 +1,1765 @@
+{% extends 'include/homepage.html' %}
+{% load static %}
+{% block content %}
+{% include 'include/header.html' %}
+
+    <!-- ===============  hero one style start =============== -->
+    <div class="hero_style__three section_gap_y_bottom__1 position-relative">
+        <img src="{% static 'assets/images/shapes/hero-shape-three.png' %}" alt="" class="d-lg-block d-none hero_bg__shape blend-overlay position-absolute top-0 end-0 z-neg-1">
+        <img src="{% static 'assets/images/shapes/hero-star.svg' %}" alt="" class="hero_star__shape position-absolute start-0 top-50">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-7">
+                    <div class="hero__content">
+                        <h1 class="text__outlined">{{settings.title}}</h1>
+                        <h1 class="text__gradient">{{settings.description}}</h1>
+
+                        <div class="hero__actions">
+                            <a href="#" class="btn-rounded-v2">Explore NFTs</a>
+                            <a href="#" class="btn-rounded-v3 varient-2">Create NFT</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block text-lg-end">
+                    <div class="hero__featured">
+                        <img src="{{settings.image.url}}" alt="">
+                        <!-- <img src="{% static 'assets/images/hero/hero-batch.png' %}" alt="" class="hero__batch"> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  hero one style end =============== -->
+
+
+    <!-- ===============  collection style start =============== -->
+    <div class="collection_style__three bg-body section_gap_y_bottom__1 position-relative z-1">
+        <div class="container">
+            <div class="row gy-4 align-items-end">
+                <div class="col-lg-6">
+                    <span class="sub-header-2">Most Popular</span>
+                    <h2 class="section_title__2">Popular Collections</h2>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-lg-end align-items-center">
+                    <div class="slider__nav d-flex mr-3">
+                        <div class="collection__three_prev navigation_btn_2 btn__prev mr-1">
+                            <i class="bi bi-chevron-left"></i>
+                        </div>
+                        <div class="collection__three_next navigation_btn_2 btn__next">
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                    <a href="collection.html" class="btn-rounded-v3">View all <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.25 6H11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.25 1L11.25 6L6.25 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="swiper collection_slider__two pt-40">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="collection_card_style__two">
+                            <div class="collection_card__thumb">
+                                <img src="{% static 'assets/images/collection/col-one.png' %}" alt="">
+                            </div>
+                            <div class="collection_card__overlay">
+                                <a href="collection.html" class="collection_btn">Photography</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="collection_card_style__two">
+                            <div class="collection_card__thumb">
+                                <img src="{% static 'assets/images/collection/col-two.png' %}" alt="">
+                            </div>
+                            <div class="collection_card__overlay">
+                                <a href="collection.html" class="collection_btn">Collectibles</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="collection_card_style__two">
+                            <div class="collection_card__thumb">
+                                <img src="{% static 'assets/images/collection/col-three.png' %}" alt="">
+                            </div>
+                            <div class="collection_card__overlay">
+                                <a href="collection.html" class="collection_btn">Digital Arts</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="collection_card_style__two">
+                            <div class="collection_card__thumb">
+                                <img src="{% static 'assets/images/collection/col-four.png' %}" alt="">
+                            </div>
+                            <div class="collection_card__overlay">
+                                <a href="collection.html" class="collection_btn">Music</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  collection style end =============== -->
+
+    <!-- ===============  seller style start =============== -->
+    <div class="seller_style__three bg-body section_gap_y_bottom__1">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="section_title__2">Best Sellers</h2>
+                    <p class="disc-text pt-2">Most popular gaming digital nft market place</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 order-0">
+                    <div class="row gy-xl-0 gy-3">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="seller_card_style__three">
+                                <div class="seller__thumb">
+                                    <img src="{% static 'assets/images/sellers/seller-one.png' %}" alt="">
+                                </div>
+                                <div class="seller__disc">
+                                    <h5 class="seller__name"><a href="author-profile.html">Millie_Yate</a></h5>
+                                    <span class="total__spend">$1,954</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="seller_card_style__three">
+                                <div class="seller__thumb">
+                                    <img src="{% static 'assets/images/sellers/seller-two.png' %}" alt="">
+                                </div>
+                                <div class="seller__disc">
+                                    <h5 class="seller__name"><a href="author-profile.html">Ravi_O'Leigh</a></h5>
+                                    <span class="total__spend">008</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="seller_card_style__three">
+                                <div class="seller__thumb">
+                                    <img src="{% static 'assets/images/sellers/seller-three.png' %}" alt="">
+                                </div>
+                                <div class="seller__disc">
+                                    <h5 class="seller__name"><a href="author-profile.html">Gon_Freecs</a></h5>
+                                    <span class="total__spend">$5,011,111</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="seller_card_style__three">
+                                <div class="seller__thumb">
+                                    <img src="{% static 'assets/images/sellers/seller-four.png' %}" alt="">
+                                </div>
+                                <div class="seller__disc">
+                                    <h5 class="seller__name"><a href="author-profile.html">Ida_Chapman</a></h5>
+                                    <span class="total__spend">$30,652</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 order-2 order-lg-1">
+                    <div class="row pt-3 pt-xl-5 gy-xl-0 gy-3 justify-content-lg-center has_border__top">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="seller_card_style__three">
+                                <div class="seller__thumb">
+                                    <img src="{% static 'assets/images/sellers/seller-five.png' %}" alt="">
+                                </div>
+                                <div class="seller__disc">
+                                    <h5 class="seller__name"><a href="author-profile.html">Ida_Chapman</a></h5>
+                                    <span class="total__spend">$30,652</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 has_border__left">
+                            <div class="seller_card_style__three">
+                                <div class="seller__thumb">
+                                    <img src="{% static 'assets/images/sellers/seller-six.png' %}" alt="">
+                                </div>
+                                <div class="seller__disc">
+                                    <h5 class="seller__name"><a href="author-profile.html">Ida_Chapman</a></h5>
+                                    <span class="total__spend">$30,652</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 has_border__left">
+                            <div class="seller_card_style__three">
+                                <div class="seller__thumb">
+                                    <img src="{% static 'assets/images/sellers/seller-three.png' %}" alt="">
+                                </div>
+                                <div class="seller__disc">
+                                    <h5 class="seller__name"><a href="author-profile.html">Ida_Chapman</a></h5>
+                                    <span class="total__spend">$30,652</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 order-1 order-lg-2">
+                    <div class="row pt-3 gy-xl-0 pt-xl-5 gy-3 has_border__top">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="seller_card_style__three">
+                                <div class="seller__thumb">
+                                    <img src="{% static 'assets/images/sellers/seller-seven.png' %}" alt="">
+                                </div>
+                                <div class="seller__disc">
+                                    <h5 class="seller__name"><a href="author-profile.html">Gon_Freecs</a></h5>
+                                    <span class="total__spend">$5,011,111</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="seller_card_style__three">
+                                <div class="seller__thumb">
+                                    <img src="{% static 'assets/images/sellers/seller-eight.png' %}" alt="">
+                                </div>
+                                <div class="seller__disc">
+                                    <h5 class="seller__name"><a href="author-profile.html">Ida_Chapman</a></h5>
+                                    <span class="total__spend">$30,652</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="seller_card_style__three">
+                                <div class="seller__thumb">
+                                    <img src="{% static 'assets/images/sellers/seller-one.png' %}" alt="">
+                                </div>
+                                <div class="seller__disc">
+                                    <h5 class="seller__name"><a href="author-profile.html">Millie_Yate</a></h5>
+                                    <span class="total__spend">$1,954</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="seller_card_style__three">
+                                <div class="seller__thumb">
+                                    <img src="{% static 'assets/images/sellers/seller-two.png' %}" alt="">
+                                </div>
+                                <div class="seller__disc">
+                                    <h5 class="seller__name"><a href="author-profile.html">Ravi_O'Leigh</a></h5>
+                                    <span class="total__spend">008</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- ===============  seller style start =============== -->
+    
+    <!-- ===============  nft grid style start =============== -->
+    <div class="nft_grid_style__three bg-body section_gap_y_bottom__1">
+        <div class="container">
+            <div class="row gy-4 align-items-end">
+                <div class="col-xl-2 col-lg-3 d-flex justify-content-between ">
+                    <div class="nft_grid__title">
+                        <span class="sub-header-2">Exclusive Assets</span>
+                        <h2 class="section_title__2">Explore NFTs</h2>
+                    </div>
+                </div>
+
+                <div class="col-xl-10 col-lg-9 d-flex justify-content-between flex-wrap gap-3">
+                    <div class="select_style__one varient-4">
+                        <select class="select__nice">
+                            <option data-display="Following">Following</option>
+                            <option value="1">Followrs</option>
+                            <option value="2">New Added</option>
+                            <option value="3">All</option>
+                            <option value="4">Oldest</option>
+                          </select>
+                    </div>
+
+                    <ul class="nft_nav_pills__two nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="nft_pill_1" data-bs-toggle="pill" data-bs-target="#nft_tab_1"
+                                type="button" role="tab" aria-controls="nft_tab_1" aria-selected="true">
+                               <span>All</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="nft_pill_2" data-bs-toggle="pill" data-bs-target="#nft_tab_2"
+                                type="button" role="tab" aria-controls="nft_tab_2" aria-selected="true">
+                                <span>Art</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="nft_pill_3" data-bs-toggle="pill" data-bs-target="#nft_tab_3"
+                                type="button" role="tab" aria-controls="nft_tab_3" aria-selected="true">
+                                <span>Photography</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="nft_pill_4" data-bs-toggle="pill" data-bs-target="#nft_tab_4"
+                                type="button" role="tab" aria-controls="nft_tab_4" aria-selected="true">
+                                <span>Games</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="nft_pill_5" data-bs-toggle="pill" data-bs-target="#nft_tab_5"
+                                type="button" role="tab" aria-controls="nft_tab_5" aria-selected="true">
+                                <span>Collectibles</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="nft_pill_6" data-bs-toggle="pill" data-bs-target="#nft_tab_6"
+                                type="button" role="tab" aria-controls="nft_tab_6" aria-selected="true">
+                                <span>Trading Cards</span>
+                            </button>
+                        </li>
+                        
+        
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-content pt-50" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="nft_tab_1" role="tabpanel" aria-labelledby="nft_pill_1">
+                   <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-4">
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-one.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-three.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Robot Generation</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.01 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-11-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-two.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-four.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Pinky Ocean</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.05 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-10-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-three.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-four.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Robot Generation</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.01 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-11-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-four.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-three.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Rainbow Style</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.01 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2023-01-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-five.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-three.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Robot Generation</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.01 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-8-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-six.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-four.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Sound of Silence</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.18 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-10-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-seven.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-four.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Abstract Figure</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.25 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-7-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-eight.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-three.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Geometrical Figure</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.15 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2023-01-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="tab-pane fade" id="nft_tab_2" role="tabpanel" aria-labelledby="nft_pill_2">
+                    <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-4">
+                        
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-five.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-three.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Robot Generation</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.01 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-8-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-six.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-four.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Sound of Silence</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.18 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-10-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-seven.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-four.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Abstract Figure</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.25 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-7-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-eight.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-three.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Geometrical Figure</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.15 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2023-01-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="tab-pane fade" id="nft_tab_3" role="tabpanel" aria-labelledby="nft_pill_3">
+                    <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-4">
+                        
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-two.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-four.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Pinky Ocean</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.05 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-10-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-four.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-three.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Rainbow Style</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.01 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2023-01-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-seven.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-four.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Abstract Figure</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.25 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-7-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-eight.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-three.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Geometrical Figure</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.15 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2023-01-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="tab-pane fade" id="nft_tab_4" role="tabpanel" aria-labelledby="nft_pill_4">
+                    <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-4">
+                      
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-four.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-three.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Rainbow Style</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.01 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2023-01-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-five.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-three.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Robot Generation</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.01 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-8-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-eight.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-three.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Geometrical Figure</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.15 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2023-01-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="tab-pane fade" id="nft_tab_5" role="tabpanel" aria-labelledby="nft_pill_5">
+                    <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-4">
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-one.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-three.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Robot Generation</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.01 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-11-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-two.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-four.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Pinky Ocean</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.05 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-10-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-six.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-four.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Sound of Silence</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.18 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-10-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-seven.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-four.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Abstract Figure</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.25 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-7-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-eight.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-three.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Geometrical Figure</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.15 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2023-01-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div class="tab-pane fade" id="nft_tab_6" role="tabpanel" aria-labelledby="nft_pill_6">
+                    <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 gy-4">
+                        
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-two.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-four.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Pinky Ocean</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.05 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-10-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="nft_card_style__two">
+                                <div class="nft__thumb">
+                                    <div class="nft__cover">
+                                        <a href="nft-details.html">
+                                            <img src="{% static 'assets/images/nft/ns-three.png' %}" alt="">
+                                        </a>
+                                    </div>
+        
+                                    <div class="nft__actions">
+                                        <button class="actions__btn fav__btn">
+                                            <img src="{% static 'assets/images/icons/red-heart.svg' %}" alt="">
+                                        </button>
+                                        <button class="actions__btn info__btn">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+        
+                                        <div class="avater__group">
+                                            <img src="{% static 'assets/images/nft/ag-one.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-four.png' %}" alt="">
+                                            <img src="{% static 'assets/images/nft/ag-two.png' %}" alt="">
+        
+                                            <img src="{% static 'assets/images/icons/tick-yellow-x.svg' %}" alt="" class="user__tick">
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="nft__disc">
+                                    <h5 class="nft__title"><a href="nft-details.html">Robot Generation</a></h5>
+        
+                                    <div class="nft__info">
+                                        <ins> <img src="{% static 'assets/images/icons/tri-flash-pink.svg' %}" alt=""> 0.01 ETH</ins>
+                                        <span>1 of 100</span>
+                                    </div>
+                                    <div class="nft__btns">
+                                        <div class="count__down countdown" data-date="2022-11-09">
+                                        </div>
+                                        <a href="nft-details.html" class="bid-btn">Place a bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  nft grid style end =============== -->
+    
+    <!-- ===============  artist style start =============== -->
+    <div class="artists_style__one bg-body section_gap_y_bottom__1">
+        <div class="container">
+            <div class="row gy-4 align-items-end">
+                <div class="col-lg-6">
+                    <h2 class="section_title__2">Featured Artists</h2>
+                    <p class="disc-text pt-2">Most popular gaming digital nft market place</p>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-lg-end align-items-center">
+                    <div class="slider__nav d-flex mr-3">
+                        <div class="artist__prev navigation_btn_2 btn__prev mr-1">
+                            <i class="bi bi-chevron-left"></i>
+                        </div>
+                        <div class="artist__next navigation_btn_2 btn__next">
+                            <i class="bi bi-chevron-right"></i>
+                        </div>
+                    </div>
+                    <a href="creators.html" class="btn-rounded-v3">View all <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.25 6H11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.25 1L11.25 6L6.25 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></a>
+                </div>
+            </div>
+            <div class="row pt-50">
+                <div class="swiper artist_slider__one">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="artist_card_style__one">
+                                <div class="artist__thumb">
+                                    <div class="artist__cover">
+                                        <img src="{% static 'assets/images/artists/sc-one.png' %}" alt="">
+                                    </div>
+                                    <div class="artist__avater">
+                                        <img src="{% static 'assets/images/artists/sa-one.png' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="artist__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Séchen</a></h6>
+                                    <button class="btn-follow">
+                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.5 8.5V1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="artist_card_style__one">
+                                <div class="artist__thumb">
+                                    <div class="artist__cover">
+                                        <img src="{% static 'assets/images/artists/sc-two.png' %}" alt="">
+                                    </div>
+                                    <div class="artist__avater">
+                                        <img src="{% static 'assets/images/artists/sa-two.png' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="artist__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Séchen</a></h6>
+                                    <button class="btn-follow">
+                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.5 8.5V1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="artist_card_style__one">
+                                <div class="artist__thumb">
+                                    <div class="artist__cover">
+                                        <img src="{% static 'assets/images/artists/sc-three.png' %}" alt="">
+                                    </div>
+                                    <div class="artist__avater">
+                                        <img src="{% static 'assets/images/artists/sa-three.png' %}" alt="">
+                                    </div>
+                                    
+                                </div>
+                                <div class="artist__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Séchen</a></h6>
+                                    <button class="btn-follow">
+                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.5 8.5V1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="artist_card_style__one">
+                                <div class="artist__thumb">
+                                    <div class="artist__cover">
+                                        <img src="{% static 'assets/images/artists/sc-four.png' %}" alt="">
+                                    </div>
+                                    <div class="artist__avater">
+                                        <img src="{% static 'assets/images/artists/sa-four.png' %}" alt="">
+                                    </div>
+                                   
+                                </div>
+                                <div class="artist__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Séchen</a></h6>
+                                    <button class="btn-follow">
+                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.5 8.5V1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="artist_card_style__one">
+                                <div class="artist__thumb">
+                                    <div class="artist__cover">
+                                        <img src="{% static 'assets/images/artists/sc-five.png' %}" alt="">
+                                    </div>
+                                    <div class="artist__avater">
+                                        <img src="{% static 'assets/images/artists/sa-five.png' %}" alt="">
+                                    </div>
+                                    
+                                </div>
+                                <div class="artist__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Séchen</a></h6>
+                                    <button class="btn-follow">
+                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.5 8.5V1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="artist_card_style__one">
+                                <div class="artist__thumb">
+                                    <div class="artist__cover">
+                                        <img src="{% static 'assets/images/artists/sc-six.png' %}" alt="">
+                                    </div>
+                                    <div class="artist__avater">
+                                        <img src="{% static 'assets/images/artists/sa-six.png' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="artist__disc">
+                                    <h6 class="artist__name"><a href="author-profile.html">Jim Séchen</a></h6>
+                                    <button class="btn-follow">
+                                        <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 5H8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.5 8.5V1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>Follow</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ===============  artist style end =============== -->
+
+    <!-- ===============  community style start =============== -->
+    <div class="community_style_one section_gap_y_bottom__1 section_gap_y_top__1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 class="section_title__2">Join the Community</h2>
+                    <p class="disc-text pt-2">Learn more about Maker, chat with the team, others in the community,
+                        and have your sa y in shaping.</p>
+
+                        <ul class="community_social__links d-flex flex-wrap justify-content-center">
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#"><i class="bi bi-github"></i></a></li>
+                            <li><a href="#"><i class="bi bi-discord"></i></a></li>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="row section_gap_y_top__1 nft_process__wrap justify-content-center gy-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="nft_process__card">
+                        <div class="process__icon">
+                            <img src="{% static 'assets/images/icons/process-doc.svg' %}" alt="">
+                        </div>
+                        <h5>Create your collection</h5>
+                        <p>Add new, trending and rare artwork to your collection.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="nft_process__card">
+                        <div class="process__icon">
+                            <img src="{% static 'assets/images/icons/process-card.svg' %}" alt="">
+                        </div>
+                        <h5>Set Up Your Wallet</h5>
+                        <p>Sed ut perspiciatis unde omnste natus error sit voluptatem</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="nft_process__card">
+                        <div class="process__icon">
+                            <img src="{% static 'assets/images/icons/process-sell.svg' %}" alt="">
+                        </div>
+                        <h5>List Them For Sale</h5>
+                        <p>I throw myself down among the tall grass by the stream</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="nft_process__card">
+                        <div class="process__icon">
+                            <img src="{% static 'assets/images/icons/process-add.svg' %}" alt="">
+                        </div>
+                        <h5>Add Your NFTs</h5>
+                        <p>Sed ut perspiciatis unde omnste natus error sit voluptatem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  community style end =============== -->
+
+    <!-- ===============  blog style start =============== -->
+    <div class="blog_style__one bg-body section_gap_y_bottom__1">
+        <div class="container">
+            <div class="row gy-4 align-items-end">
+                <div class="col-md-7">
+                    <span class="sub-header-2">Most Popular</span>
+                    <h2 class="section_title__2">Popular Collections</h2>
+                </div>
+                <div class="col-md-5 text-md-end">
+                    <a href="#" class="btn-rounded-v3">View all post</a>
+                </div>
+            </div>
+
+            <div class="row pt-50">
+                <div class="col-lg-12">
+                    <div class="blog_card_style__one">
+                        <div class="blog__body">
+                            <div class="blog_thumb">
+                                <img src="{% static 'assets/images/blog/b-one.png' %}" alt="">
+                            </div>
+                            <div class="blog_disc">
+                                <ul class="blog_meta">
+                                    <li class="blog__tag"> <a href="blog.html">COLUMNS</a> </li>
+                                    <li class="blog__writer"><a href="#">By Jolene Creighton</a></li>
+                                    <li class="blog__date">Jun 14 2022</li>
+                                </ul>
+                                <h5 class="blog__title"><a href="blog-details.html">Lucien Smith Aims to Cultivate
+                                        Emerging Artists Through New SEEDS NFT Project</a></h5>
+                            </div>
+                        </div>
+                        <a class="blog__btn" href="blog-details.html">
+                            <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 12.9658L5.59317 8.37172C6.13561 7.82916 6.13561 6.94135 5.59317 6.39879L1 1.80469"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="blog_card_style__one">
+                        <div class="blog__body">
+                            <div class="blog_thumb">
+                                <img src="{% static 'assets/images/blog/b-two.png' %}" alt="">
+                            </div>
+                            <div class="blog_disc">
+                                <ul class="blog_meta">
+                                    <li class="blog__tag"> <a href="blog.html">COLUMNS</a> </li>
+                                    <li class="blog__writer"><a href="#">By Jolene Creighton</a></li>
+                                    <li class="blog__date">Jun 14 2022</li>
+                                </ul>
+                                <h5 class="blog__title"><a href="blog-details.html">“Clock” NFT Sells for $52.7M to Help
+                                        Fund Julian Assange’s Legal Defense</a></h5>
+                            </div>
+                        </div>
+                        <a class="blog__btn" href="blog-details.html">
+                            <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 12.9658L5.59317 8.37172C6.13561 7.82916 6.13561 6.94135 5.59317 6.39879L1 1.80469"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="blog_card_style__one mb-0">
+                        <div class="blog__body">
+                            <div class="blog_thumb">
+                                <img src="{% static 'assets/images/blog/b-three.png' %}" alt="">
+                            </div>
+                            <div class="blog_disc">
+                                <ul class="blog_meta">
+                                    <li class="blog__tag"> <a href="blog.html">COLUMNS</a> </li>
+                                    <li class="blog__writer"><a href="#">By Jolene Creighton</a></li>
+                                    <li class="blog__date">Jun 14 2022</li>
+                                </ul>
+                                <h5 class="blog__title"><a href="blog-details.html">Behind The Drop: The Making of
+                                        Joshua Davis’
+                                        The VO1D</a></h5>
+                            </div>
+                        </div>
+                        <a class="blog__btn" href="blog-details.html">
+                            <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 12.9658L5.59317 8.37172C6.13561 7.82916 6.13561 6.94135 5.59317 6.39879L1 1.80469"
+                                    stroke="currentColor" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===============  blog style end =============== -->
+    
+{% include 'include/footer.html' %}
+{% endblock %}
